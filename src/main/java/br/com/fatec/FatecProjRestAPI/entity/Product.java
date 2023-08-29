@@ -2,10 +2,17 @@ package br.com.fatec.FatecProjRestAPI.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Product {
 
     @Id
